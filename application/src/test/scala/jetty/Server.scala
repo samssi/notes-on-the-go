@@ -1,7 +1,5 @@
 package jetty
 
-import org.eclipse.jetty.server.Server
-import org.eclipse.jetty.webapp.WebAppContext
 import org.apache.log4j.{PatternLayout, ConsoleAppender, Level, Logger}
 import org.eclipse.jetty.server.Server
 import org.eclipse.jetty.webapp.WebAppContext

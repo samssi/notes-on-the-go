@@ -29,10 +29,12 @@ object MasterBuild extends Build {
       base = file("application"),
       settings = generalSettings ++ serverSettings ++ Seq(
         libraryDependencies ++= Seq(
-          "org.scalatra" %% "scalatra" % "2.3.0",
-          "org.scalatra" %% "scalatra-scalatest" % "2.3.0" % "test",
-          "org.scalatra" %% "scalatra-json" % "2.3.0",
-          "org.scalatra" %% "scalatra-swagger" % "2.3.0"
+          "org.scalatra" %% "scalatra" % "2.2.1",
+          "org.scalatra" %% "scalatra-scalatest" % "2.2.1" % "test",
+          "org.scalatra" %% "scalatra-json" % "2.2.1",
+          "org.scalatra" %% "scalatra-swagger" % "2.2.1",
+          "com.google.inject" % "guice" % "3.0",
+          "com.google.inject.extensions" % "guice-servlet" % "3.0"
         )
       )
     )
