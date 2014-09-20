@@ -4,4 +4,5 @@ import fi.samssi.notesongo.domain.Note
 
 trait NoteService {
   def findNoteFor(userId: String): Note
+  def updateNote(note: Note)
 }
