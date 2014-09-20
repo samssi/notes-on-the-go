@@ -10,8 +10,7 @@
     </head>
     <body ng-app="notesongo">
         <div ng-controller="noteController">
-            <input type="hidden" ng-model="note.userId" value="foo"/>
-            <textarea ng-model="note.note" ui-event="{keyup : 'loadNote($event)'}"></textarea>
+            <textarea cols="100" rows="30" ng-model="note.note" ui-event="{keyup: 'updateNote($event)'}"></textarea>
         </div>
     </body>
 </html>

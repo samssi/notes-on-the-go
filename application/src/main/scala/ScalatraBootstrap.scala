@@ -7,7 +7,7 @@ import org.scalatra.LifeCycle
 class ScalatraBootstrap extends LifeCycle {
   override def init(context: ServletContext) = {
     val injector = createInjector()
-    context.mount(injector.getInstance(classOf[NoteServlet]), "/note")
+    context.mount(injector.getInstance(classOf[NoteServlet]), "/")
   }
 
   private def createInjector(): Injector = {
