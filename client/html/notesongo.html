@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Notes on go</title>
+        <script type="text/javascript" src="../lib/angular-1.2.1.js"></script>
+        <script type="text/javascript" src="../lib/ui-utils-0.0.4.js"></script>
+        <script type="text/javascript" src="../lib/lodash-2.3.0.js"></script>
+        <script type="text/javascript" src="../lib/restangular-1.1.8.js"></script>
+        <script type="text/javascript" src="../js/notesongo.js"></script>
+    </head>
+    <body ng-app="notesongo">
+        <div ng-controller="noteController">
+            <input type="hidden" ng-model="note.userId" value="foo"/>
+            <textarea ng-model="note.note" ui-event="{keyup : 'loadNote($event)'}"></textarea>
+        </div>
+    </body>
+</html>
