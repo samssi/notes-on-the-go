@@ -1,12 +1,11 @@
 package fi.samssi.notesongo.servlet
 
-import org.scalatra.{Ok, ScalatraServlet}
+import org.scalatra.Ok
 import com.google.inject.Inject
 import fi.samssi.notesongo.service.NoteService
 
-class NoteServlet @Inject()(noteService: NoteService) extends ScalatraServlet {
+class NoteServlet @Inject()(noteService: NoteService) extends MasterServlet {
   get("/:userId") {
     Ok(noteService.findNoteFor(params("userId")))
-
   }
 }

@@ -33,6 +33,8 @@ object MasterBuild extends Build {
           "org.scalatra" %% "scalatra-scalatest" % "2.2.1" % "test",
           "org.scalatra" %% "scalatra-json" % "2.2.1",
           "org.scalatra" %% "scalatra-swagger" % "2.2.1",
+          "org.json4s" %% "json4s-native" % "3.2.5",
+          "org.json4s"   %% "json4s-jackson" % "3.2.5",
           "com.google.inject" % "guice" % "3.0",
           "com.google.inject.extensions" % "guice-servlet" % "3.0"
         )
